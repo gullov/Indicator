@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#10124D"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@+id/custom_section_color"
+        android:layout_width="2000dp"
+        android:layout_height="20dp"
+        app:isb_progress="100"
+        app:isb_show_indicator="rectangle"
+        app:isb_tick_marks_drawable="@mipmap/ic_launcher"
+        app:isb_show_tick_marks_type="square"
+        app:isb_tick_marks_color="#10124D"
+        app:isb_tick_marks_size="20dp"
+        app:isb_ticks_count="20"
+        app:isb_seek_smoothly="true"
+        app:isb_max="1000"
+        app:isb_thumb_adjust_auto="false"
+        app:isb_thumb_size="25dp"
+        app:isb_thumb_color="#FFFB00"
+        app:isb_track_progress_color="@color/design_default_color_secondary"
+        app:isb_track_background_color="#FFFFFF"
+        app:isb_only_thumb_draggable="true"
+        app:isb_track_background_size="16dp"
+        app:isb_track_progress_size="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</HorizontalScrollView>
